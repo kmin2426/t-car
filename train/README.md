@@ -1,23 +1,22 @@
 # Traffic Sign & Traffic Light Training (Stage 1)
 ## 1. Overview
 This directory contains:
-- convert_to_yolo.py: Converts original Jetson-format annotations to YOLO format
-- data.yaml: Dataset configuration for Ultralytics YOLO training.
+- `convert_to_yolo.py`: Converts original Jetson-format annotations to YOLO format
+- `data.yaml`: Dataset configuration for Ultralytics YOLO training.
 
 The actual dataset is stored only on the GPU server and is not included in this repository.
 
 ## 2. Dataset
 ### 2-1. Dataset Source
+
 Download from the following AIHub datasets:
 
-승용 자율주행차 주간 도심도로 데이터
-https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&searchKeyword=%EC%8A%B9%EC%9A%A9%20%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%EC%B0%A8%20%EC%A3%BC%EA%B0%84%20%EB%8F%84%EC%8B%AC%EB%8F%84%EB%A1%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0&aihubDataSe=data&dataSetSn=71621
+- [승용 자율주행차 주간 도심도로 데이터](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&searchKeyword=%EC%8A%B9%EC%9A%A9%20%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%EC%B0%A8%20%EC%A3%BC%EA%B0%84%20%EB%8F%84%EC%8B%AC%EB%8F%84%EB%A1%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0&aihubDataSe=data&dataSetSn=71621)
 
-승용 자율주행차 주간 자동차 전용도로 데이터
-https://aihub.or.kr/aihubdata/data/view.do?srchOptnCnd=OPTNCND001&currMenu=115&topMenu=100&searchKeyword=%EC%8A%B9%EC%9A%A9+%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%EC%B0%A8+%EC%A3%BC%EA%B0%84+%EC%9E%90%EB%8F%99%EC%B0%A8+%EC%A0%84%EC%9A%A9%EB%8F%84%EB%A1%9C+%EB%8D%B0%EC%9D%B4%ED%84%B0&aihubDataSe=data&dataSetSn=71623
+- [승용 자율주행차 주간 자동차 전용도로 데이터](https://aihub.or.kr/aihubdata/data/view.do?srchOptnCnd=OPTNCND001&currMenu=115&topMenu=100&searchKeyword=%EC%8A%B9%EC%9A%A9+%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89%EC%B0%A8+%EC%A3%BC%EA%B0%84+%EC%9E%90%EB%8F%99%EC%B0%A8+%EC%A0%84%EC%9A%A9%EB%8F%84%EB%A1%9C+%EB%8D%B0%EC%9D%B4%ED%84%B0&aihubDataSe=data&dataSetSn=71623)
 
-신호등/도로표지판 인지 영상(수도권)
-https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&searchKeyword=%EC%8B%A0%ED%98%B8%EB%93%B1/%EB%8F%84%EB%A1%9C%ED%91%9C%EC%A7%80%ED%8C%90%20%EC%9D%B8%EC%A7%80%20%EC%98%81%EC%83%81(%EC%88%98%EB%8F%84%EA%B6%8C)&aihubDataSe=data&dataSetSn=188
+- [신호등/도로표지판 인지 영상(수도권)](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&searchKeyword=%EC%8B%A0%ED%98%B8%EB%93%B1/%EB%8F%84%EB%A1%9C%ED%91%9C%EC%A7%80%ED%8C%90%20%EC%9D%B8%EC%A7%80%20%EC%98%81%EC%83%81(%EC%88%98%EB%8F%84%EA%B6%8C)&aihubDataSe=data&dataSetSn=188)
+
 
 
 ### 2-2. Raw Data Location
