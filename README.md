@@ -11,15 +11,16 @@ The detection system is implemented as a 2-stage pipeline:
 - 0: traffic_sign
 - 1: traffic_light
 **Output**: bounding boxes for traffic signs and traffic lights
----
+<hr>
+
 ### Stage 2 – Traffic Light State Classification (MobileNet)
 **Model**: `MobileNet` classifier   
 **Outpu**t: traffic light signal state (e.g., red / yellow / green)
 
-### This repository focuses on:
-Stage 1 model comparison (baseline vs large-scale training)  
-Visualization results  
-Training configuration and reproducibility
+**This repository focuses on:**   
+- Stage 1 model comparison (baseline vs large-scale training)  
+- Visualization results  
+- Training configuration and reproducibility
 
 ## 2. Pipeline Architecture
 
@@ -49,7 +50,7 @@ Traffic Light Signal Classification
 ```
 
 ## 3. Dataset
-### 3.1 Cheonan T-CAR Sample Dataset
+### 3.1 천안(Cheonan) T-CAR Sample Dataset
 This repository includes a 260-image dataset:
 ```bash
 data/images/
