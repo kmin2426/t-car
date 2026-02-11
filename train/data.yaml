@@ -1,0 +1,8 @@
+path: /data4/dongmin/t-car/data/yolo
+train: images/train
+val: images/val
+
+nc: 2
+names:
+  0: traffic_sign
+  1: traffic_light

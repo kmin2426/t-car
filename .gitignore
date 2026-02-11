@@ -1,0 +1,13 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+
+# outputs
+runs/
+*.mp4
+
+# data cache
+*.npy
+*.npz
