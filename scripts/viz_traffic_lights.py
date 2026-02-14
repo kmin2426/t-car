@@ -101,4 +101,6 @@ if __name__ == "__main__":
     run_inference("weights/before.pt", "runs/viz/before")
 
     # after
+    run_inference("weights/last.pt", "runs/viz/last")
+
     run_inference("weights/after.pt", "runs/viz/after")
