@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # results.csv 경로 (스크립트와 같은 폴더)
 base_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path = os.path.join(base_dir, "results_after.csv")
+csv_path = os.path.join(base_dir, "results_last.csv")
 
 print("CSV path:", csv_path)
 df = pd.read_csv(csv_path)
@@ -42,7 +42,7 @@ for i, col in enumerate(panel_cols):
 for j in range(len(panel_cols), len(axes)):
     axes[j].set_axis_off()
 
-out_path = os.path.join(base_dir, "results_after.png")
+out_path = os.path.join(base_dir, "results_last.png")
 plt.savefig(out_path, dpi=300)
 plt.show()
 
